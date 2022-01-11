@@ -1,9 +1,23 @@
 ﻿# YoutubeDownload
 
-Status do Projeto
+### Descrição do Projeto
+<p>Interface desktop para download e vídeos do youtube de forma fácil e prática.</p>
+
+### Status do Projeto
 
 🚧 Status: 🚀 Iniciando !!! 🚧.
 
+### Features
+
+- [x] Tela Inicial
+- [x] Pegar vídeos do canal
+- [ ] Pegar vídeos da playlist
+- [ ] Pegar vídeo url
+- [ ] Adicionar progressbar ao carregar os vídeos
+- [ ] adicionar Threads 
+- [ ] Adicionar botão de configurações
+- [ ] Downloads simultâneos
+- [ ] Salvar lista de downloads feitos
 
 ### 🎥 Visualização Atual
 
