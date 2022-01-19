@@ -23,11 +23,14 @@ class App(AppInicial):
         total_size = stream.filesize
         bytes_downloaded = total_size - bytes_remaining
         percentage_of_completion = bytes_downloaded / total_size * 100
-        self.tree.set(item[self.position_download], column=3, value=percentage_of_completion)
+        self.tree.set(item[self.position_download], column=2,
+                    value=f"{round(percentage_of_completion, 2)} %")
     
     def downloag_video(self, ):
         chunk_size = 1024
-        path_destino = "./assets/"
+        path_destino = "./assets/download/"
+        self.progres_1.start()
+        self.progres_1.place(x=26,  y = 470)
         
         for i, x in enumerate(self.lista_videos):
             pos = i + 1
@@ -35,10 +38,12 @@ class App(AppInicial):
             
             video = x.streams.get_highest_resolution()
             x.register_on_progress_callback(self.on_progress)
-            
          
             video.download(path_destino)
-            
+        self.progres_1.stop()
+        self.progres_1.place_forget()
+        
+        
     def download_videos(self,):        
         threading.Thread(target=self.downloag_video).start()
         
@@ -76,7 +81,7 @@ class App(AppInicial):
         self.progres_1.place(x=26,  y = 470)
         self.label_carregando.place(x=26, y = 450)
         #self.botao_download.place_forget()
-        url = "https://www.youtube.com/channel/UCEF_7VgJxwQLSNGHksCkSyQ/videos"#self.url_entry.get()
+        url = self.url_entry.get()
         t = threading.Thread(target=self.getVideos, args=(url,)).start()
         
 if __name__ == "__main__":
