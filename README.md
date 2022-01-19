@@ -1,3 +1,4 @@
+
 ﻿# YoutubeDownload
 
 ### Descrição do Projeto
@@ -21,5 +22,7 @@
 
 ### 🎥 Visualização Atual
 
-![Youtuber Download Free 2022-01-11 17-26-45 (online-video-cutter com)](https://user-images.githubusercontent.com/66011013/149016551-60bd3517-6a2d-4c5d-af8d-a03e8aa7ffe9.gif)
+![sc1](https://user-images.githubusercontent.com/66011013/150042589-49c48153-70ed-40cd-ae09-4ad3a6c2d4d5.png)
+
+![sc3](https://user-images.githubusercontent.com/66011013/150042613-b6da217b-fb67-423d-9d72-883c7f4fa5a7.png)
 
